@@ -32,12 +32,18 @@ public class CustomListTest {
     }
 
     @Test
-    public void deleteCity(City city) {
+    public void deleteCityTest() {
+        createList();
+        list.addCity(new City("Halifax", "NS"));
         // delete halifax city that we added aboe
         City cityD = new City("Halifax", "NS");
         // make sure Halifax exist
         assertEquals(true, list.hasCity(cityD));
         list.deleteCity(cityD);
         assertEquals(false, list.hasCity(cityD));
+    }
+    @Test
+    public void countCityTest() {
+
     }
 }

@@ -83,4 +83,13 @@ public class CustomList extends ArrayAdapter<City> {
         // else throw exeption
         throw new IllegalArgumentException();
     }
+    /**
+     * This returns the number of cities in the list
+     *
+     * @return the count of cities
+     */
+    public int countCities() {
+        //return this.cities.size();
+        return 0;
+    }
 }
