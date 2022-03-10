@@ -40,6 +40,4 @@ public class CustomListTest {
         list.deleteCity(cityD);
         assertEquals(false, list.hasCity(cityD));
     }
-
-
 }
